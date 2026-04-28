@@ -1,17 +1,18 @@
-import HeroSection from './HeroSection';
-import AboutSection from './AboutSection';
-import FeaturesSection from './FeaturesSection';
-import VisionMissionSection from './VisionMissionSection';
-import CTASection from './CTASection';
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import FeaturesSection from '../components/FeaturesSection';
+import VisionMission from '../components/VisionMission';
+import CTASection from '../components/CTASection';
 
-export default function Home() {
+const Home = () => {
   return (
-    <main>
+    <>
       <HeroSection />
-      <AboutSection />
       <FeaturesSection />
-      <VisionMissionSection />
+      <VisionMission />
       <CTASection />
-    </main>
+    </>
   );
-}
+};
+
+export default Home;
